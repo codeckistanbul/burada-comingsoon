@@ -34,7 +34,6 @@ const paths = {
 const sourceJs = [
     nodeModules + 'jquery/dist/jquery.js',
     nodeModules + 'wowjs/dist/wow.min.js',
-    nodeModules + 'lottie-web/build/player/lottie.min.js',
     homePath + 'js/main.js',
 ];
 
@@ -86,7 +85,7 @@ function clean() {
 
 function copyFiles() {
     return gulp
-        .src(['./src/assets/img/**/*', './src/assets/icons/**/*', './src/assets/font/**/*', './src/assets/animations/**/*'
+        .src(['./src/assets/img/**/*', './src/assets/icons/**/*', './src/assets/fonts/**/*', './src/assets/animations/**/*'
         ], {base: './src/'})
         .pipe(gulp.dest(dist))
 }
